@@ -1,0 +1,137 @@
+/* line 1, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
+  background-size: 9em 9em;
+  background-repeat: repeat-x;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 13, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.index {
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+}
+
+/* line 17, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.nav {
+  padding: 1em 1em 1em 1em;
+}
+
+/* line 20, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.lead {
+  margin: 1em 1em 1em 1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 25, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.share {
+  font-size: 4em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 30, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.row {
+  margin-top: 10em;
+}
+
+/* line 33, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.para {
+  padding: 3em 1em 1em 1em;
+  font-size: 2em;
+  font-family: monospace;
+}
+
+/* line 38, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 41, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 47, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 52, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 54, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 57, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 63, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 68, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 72, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 78, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 85, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 95, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

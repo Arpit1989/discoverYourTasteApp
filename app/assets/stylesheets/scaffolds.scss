@@ -1,0 +1,110 @@
+body {
+
+  background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+  background-size: 9em 9em;
+  background-repeat:repeat-x;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+.index{
+  padding: 10em 1em 1em 1em;
+  text-align: center;
+}
+.nav{
+  padding: 1em 1em 1em 1em;
+}
+.soundcloud iframe{
+  height: 10em;
+}
+
+.soundcloudLogo{
+  margin:0.4em;
+}
+
+.button a{
+  padding: 1em 1em 1em 1em;
+  margin: 1em 1em 1em 1em;
+  width: 16em;
+}
+.lead{
+  margin: 1em 1em 1em 1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.share{
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.row{
+  margin-top: 10em;
+}
+.para{
+  padding: 3em 1em 1em 1em;
+  font-size: 2em;
+  font-family: monospace;
+}
+
+ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}

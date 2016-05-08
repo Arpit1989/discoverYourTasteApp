@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<!--print the html for the player widget-->
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="soundcloud">
+        <%= @embed_info['html'].html_safe %>
+    </div>
+    <h1>Click play and tell us how do you like the song <%= @music.artist %></h1>
+    <div class="button">
+        <a href="/next_track" class="btn btn-success btn-lg" type="button"><i class="fa fa-heartbeat fa-lg"></i> Love IT!</a>
+        <a href="/next_track" class="btn btn-warning btn-lg" type="button"><i class="fa fa-times fa-lg"></i> Nah! Not my Kind</a>
+        <a href="/next_track" class="btn btn-info btn-lg" type="button"><i class="fa fa-thumbs-up fa-lg"></i> I Like It!</a>
+        <a href="/next_track" class="btn btn-danger btn-lg" type="button"><i class="fa fa-ambulance fa-lg"></i> This is Horrible</a>
+    </div>
+  </div>
+</div>
