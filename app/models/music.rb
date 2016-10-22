@@ -1,7 +1,6 @@
 class Music < ActiveRecord::Base
   extend FriendlyId
   friendly_id :slug_candidates, use: :slugged
-  has_and_belongs_to_many :users
   # Try building a slug based on the following fields in
   # increasing order of specificity.
   def slug_candidates
@@ -12,8 +11,15 @@ class Music < ActiveRecord::Base
     ]
   end
 
-  def self.random_select
-    Music.limit(1).order("RAND()");
+  def self.random_select_song
+    genres = Music.find_by_sql("select distinct(genre) from musics");
+    Music.find_by_genre(genres.sample.genre)
   end
+
+  def self.random_select user
+    genres = Music.find_by_sql("select distinct(genre) from musics where SONG_NAME NOT IN('#{user.played_musics.map(&:song_name).uniq.join(",").to_s}')");
+    Music.find_by_genre(genres.sample.genre)
+  end
+
 
 end

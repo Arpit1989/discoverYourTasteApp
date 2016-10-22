@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
   end
 
   def start_survey
-    @music = Music.random_select;
-    redirect_to action: "show", id: @music.friendly_id ,controller: "musics"
+    @music = Music.random_select_song
+    redirect_to music_path(@music.friendly_id)
   end
 end
