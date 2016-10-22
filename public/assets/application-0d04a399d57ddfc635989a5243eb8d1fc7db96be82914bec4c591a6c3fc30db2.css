@@ -1,0 +1,185 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+/* line 1, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
+  background-size: 9em 9em;
+  background-repeat: repeat-x;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 13, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.index {
+  text-align: center;
+  color: white;
+}
+
+/* line 17, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.nav {
+  padding: 1em 1em 1em 1em;
+}
+
+/* line 20, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.soundcloud iframe {
+  height: 10em;
+}
+
+/* line 24, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.soundcloudLogo {
+  margin: 0.4em;
+}
+
+/* line 28, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.button a {
+  padding: 1em 1em 1em 1em;
+  margin: 1em 1em 1em 0em;
+  width: 16em;
+}
+
+/* line 33, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.lead {
+  margin: 1em 1em 1em 1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 38, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.share {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* line 43, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.row {
+  margin-top: 3em;
+}
+
+/* line 46, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 49, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.para {
+  font-size: 2em;
+  font-family: monospace;
+  color: white;
+}
+
+/* line 55, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 61, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 66, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 68, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 71, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 77, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 82, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 86, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 92, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 99, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 109, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 114, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.btn-success_welcome {
+  color: #fff;
+  background-color: #f99700;
+  border-color: #48B;
+}
+
+/* line 119, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.btn-success_welcome:hover {
+  color: #fff;
+  background-color: #ffa700;
+  border-color: #48B;
+}
+
+/* line 124, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #000;
+}
+
+/* line 127, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.inactive {
+  background-color: #f99700;
+  border-radius: 6px;
+}
+
+/* line 131, /Users/arpitkulshrestha/ruby/discoverYourTasteApp/app/assets/stylesheets/scaffolds.scss */
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+  background-color: #ffa700;
+}
