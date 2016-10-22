@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160508090248) do
+ActiveRecord::Schema.define(version: 20161022150126) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -41,5 +41,38 @@ ActiveRecord::Schema.define(version: 20160508090248) do
   end
 
   add_index "musics", ["slug"], name: "index_musics_on_slug", unique: true
+
+  create_table "musics_users", id: false, force: :cascade do |t|
+    t.integer "music_id"
+    t.integer "user_id"
+  end
+
+  add_index "musics_users", ["music_id"], name: "index_musics_users_on_music_id"
+  add_index "musics_users", ["user_id"], name: "index_musics_users_on_user_id"
+
+  create_table "playlists", force: :cascade do |t|
+    t.text     "tracks"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.string   "location"
+    t.string   "birthday"
+    t.string   "age_info"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "email"
+    t.string   "time_zone"
+    t.string   "gender"
+    t.boolean  "verified"
+    t.string   "image"
+  end
 
 end

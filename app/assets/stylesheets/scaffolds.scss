@@ -11,8 +11,8 @@ body {
   line-height: 18px;
 }
 .index{
-  padding: 10em 1em 1em 1em;
   text-align: center;
+  color:white;
 }
 .nav{
   padding: 1em 1em 1em 1em;
@@ -27,7 +27,7 @@ body {
 
 .button a{
   padding: 1em 1em 1em 1em;
-  margin: 1em 1em 1em 1em;
+  margin: 1em 1em 1em 0em;
   width: 16em;
 }
 .lead{
@@ -41,12 +41,15 @@ body {
   line-height: 1.4;
 }
 .row{
-  margin-top: 10em;
+  margin-top: 3em;
+}
+h1 {
+  font-size: 24px;
 }
 .para{
-  padding: 3em 1em 1em 1em;
   font-size: 2em;
   font-family: monospace;
+  color:white;
 }
 
 ol, ul, td {
@@ -107,4 +110,25 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+.btn-success_welcome {
+  color: #fff;
+  background-color: #f99700;
+  border-color: #48B;
+}
+.btn-success_welcome:hover {
+  color: #fff;
+  background-color: #ffa700;
+  border-color: #48B;
+}
+a:visited {
+  color: #000;
+}
+.inactive{
+  background-color: #f99700;
+  border-radius: 6px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: #ffa700;
 }

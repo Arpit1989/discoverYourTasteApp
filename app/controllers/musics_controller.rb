@@ -1,5 +1,6 @@
 class MusicsController < ApplicationController
   before_action :set_music, only: [:show, :edit, :update, :destroy]
+  before_action :signed_in?
 
   # GET /musics
   # GET /musics.json
@@ -70,7 +71,7 @@ class MusicsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_music
-      @music = Music.friendly.find(params[:id])
+      @music = Music.random_select
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

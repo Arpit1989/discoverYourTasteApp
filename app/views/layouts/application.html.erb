@@ -24,17 +24,31 @@
 </div>
 <div class="container-fluid">
   <div class="row-fluid">
+
     <div class="navbar-collapse collapse navbar-right " id="bs-example-navbar-collapse-1">
       <ul class="nav nav-pills ">
         <li role="presentation" class="active"><a href="/">Home</a></li>
-        <li role="presentation"><a href="#">PlayLists</a></li>
-        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation" class="inactive"><a href="#">PlayLists</a></li>
+        <li role="presentation" class="inactive"><a href="#">Profile</a></li>
       </ul>
     </div>
   </div>
-
-
-
+  <div id="user-widget" class="navbar-left" style="position: relative;top: 1.6em;left:0em">
+    <% if current_user %>
+        Welcome <strong><%= current_user.name %></strong>!
+        <%= link_to "Sign out", signout_path, id: "sign_out",:class => "btn btn-info" %>
+    <% else %>
+        <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in",:class => "btn btn-info" %>
+    <% end %>
+  </div>
+  <div class="row" style="margin-top: 4em">
+    <% flash.each do |key, value| %>
+        <div class="alert alert-info fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <%= value %>
+        </div>
+    <% end %>
+  </div>
   <%= yield %>
 </div>
 
