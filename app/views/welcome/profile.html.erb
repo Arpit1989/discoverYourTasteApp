@@ -1,0 +1,9 @@
+<div class="row" style="margin-top: 3em">
+  <div class="col-md-6 col-md-offset-3">
+    <h1> Name: <%= @user.name %></h1>
+    <h1> Recently Played songs: </h1>
+    <% @user.played_musics.select(:song_name) do |m| %>
+        <li><%= m.song_name %></li>
+    <% end %>
+  </div>
+</div>

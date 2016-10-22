@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
     root 'welcome#index'
     get '/start' => 'welcome#start_survey'
+    get '/profile' => 'welcome#profile'
     get '/next_track' => 'musics#next_track'
     match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
     match 'auth/failure', to: redirect('/'), via: [:get, :post]
