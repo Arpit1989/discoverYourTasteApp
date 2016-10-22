@@ -17,8 +17,8 @@ class Music < ActiveRecord::Base
   end
 
   def self.random_select user
-    genres = Music.find_by_sql("select distinct(genre) from musics where SONG_NAME NOT IN('#{user.played_musics.map(&:song_name).uniq.join(",").to_s}')");
-    Music.find_by_genre(genres.sample.genre)
+    song_name = Music.find_by_sql("select distinct(song_name) from musics where SONG_NAME NOT IN('#{user.played_musics.map(&:song_name).uniq.join(",").to_s}')");
+    Music.find_by_song_name(song_name)
   end
 
 
