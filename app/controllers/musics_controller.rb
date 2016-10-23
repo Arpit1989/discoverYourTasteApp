@@ -10,7 +10,7 @@ class MusicsController < ApplicationController
   # GET /musics/1
   # GET /musics/1.json
   def show
-      @music = Music.friendly.find(params[:id])
+      @music = Music.friendly.find(URI.unescape(params[:id]))
       # select random genre from all the music
       # create a client object with your app credentials
       client = Soundcloud.new(:client_id => 'd99d78670c7f1d537d0ae3d67a7be95c')

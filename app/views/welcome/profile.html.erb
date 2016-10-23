@@ -2,8 +2,9 @@
   <div class="col-md-6 col-md-offset-3">
     <h1> Name: <%= @user.name %></h1>
     <h1> Recently Played songs: </h1>
-    <% @user.played_musics.select(:song_name) do |m| %>
-        <li><%= m.song_name %></li>
+    <% @user.played_musics.select(:song_name,:slug).distinct.to_a.each do |m|%>
+        <li><%= link_to m.song_name, "/musics/#{m.slug}" %></li>
     <% end %>
+
   </div>
 </div>
