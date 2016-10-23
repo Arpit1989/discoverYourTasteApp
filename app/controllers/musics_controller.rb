@@ -59,15 +59,14 @@ class MusicsController < ApplicationController
       played_music.artist = @music.artist
       current_user.played_musics << played_music
     end
-      genres = Music.find_by_sql("select distinct(genre) from musics");
-      @next_music = Music.find_by_genre(genres.sample.genre)
-    if @next_music.id == @music.id
+      @next_music = Music.random_select_song
+    if @next_music.nil?
       @next_music = Music.random_select(current_user)
       redirect_to music_path(@next_music.friendly_id)
     elsif current_user.played_musics.select(:song_name).include?(@next_music.song_name)
       @next_music = Music.random_select(current_user)
       redirect_to music_path(@next_music.friendly_id)
-    elsif @next_music.nil?
+    elsif @next_music.id == @music.id
       @next_music = Music.random_select(current_user)
       redirect_to music_path(@next_music.friendly_id)
     else
